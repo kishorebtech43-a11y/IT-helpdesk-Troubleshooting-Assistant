@@ -32,4 +32,3 @@ def home():
             log_issue("Printer Issue")
 
     return render_template("index.html", solution=solution)
-

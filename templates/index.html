@@ -3,24 +3,64 @@
 
 <head>
     <title>IT Helpdesk Assistant</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .container {
+            background: white;
+            color: black;
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            margin: auto;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        select,
+        button {
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+        }
+
+        button {
+            background: #2a5298;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1e3c72;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>🛠️ IT Helpdesk Assistant</h1>
+    <div class="container">
+        <h2>🛠️ IT Helpdesk Assistant</h2>
 
-    <form method="POST">
-        <select name="issue">
-            <option value="internet">Internet Issue</option>
-            <option value="slow">Slow System</option>
-            <option value="software">Software Issue</option>
-            <option value="printer">Printer Issue</option>
-        </select>
+        <form method="POST">
+            <select name="issue">
+                <option value="internet">Internet Issue</option>
+                <option value="slow">Slow System</option>
+                <option value="software">Software Issue</option>
+                <option value="printer">Printer Issue</option>
+            </select>
 
-        <button type="submit">Get Solution</button>
-    </form>
+            <button type="submit">Get Solution</button>
+        </form>
 
-    <h3>{{ solution }}</h3>
+        <h3>{{ solution }}</h3>
+    </div>
 
 </body>
 
